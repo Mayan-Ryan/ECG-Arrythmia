@@ -2,9 +2,21 @@ The MIT-BIH Arrhythmia Database contains 48 half-hour excerpts of two-channel am
 
 The recordings were digitized at 360 samples per second per channel with 11-bit resolution over a 10 mV range. Two or more cardiologists independently annotated each record; disagreements were resolved to obtain the computer-readable reference annotations for each beat (approximately 110,000 annotations in all) included with the database.
 
+
 **Access the files**
 
 1. Download the ZIP file (73.5 MB)
 2. Access the files using the Google Cloud Storage Browser here. Login with a Google account is required.
 3. Access the data using the Google Cloud command line tools (please refer to the gsutil documentation for guidance): gsutil -m -u YOUR_PROJECT_ID cp -r gs://mitdb-1.0.0.physionet.org DESTINATION
 4. Download the files using your terminal: wget -r -N -c -np https://physionet.org/files/mitdb/1.0.0/
+
+
+
+**Categories:**
+
+    0 -   Normal   Left/Right bundle branch block   Atrial escape   Nodal escape
+    1 -   Atrial premature   Aberrant atrial premature   Nodal premature   Supra-ventricular premature
+    2 -   Premature ventricular contraction   Ventricular escape
+    3 -   Fusion of ventricular and normal
+    4 -   Paced   Fusion of paced and normal   Unclassifiable
+
